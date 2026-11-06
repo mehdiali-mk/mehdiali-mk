@@ -6,10 +6,12 @@
     <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" width="35px" alt="Wave" />
   </h1>
 
-  <!-- Dynamic Typing Subtitle -->
-  <a href="https://github.com/mehdiali-mk">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=0891B2&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer+(MERN+Stack);JavaScript+%7C+React.js+%7C+Node.js+%7C+Express.js;Problem+Solver+in+C%2C+C%2B%2B+%26+Python;Open+Source+Enthusiast+%26+Consistent+Learner" alt="Typing SVG" />
-  </a>
+  <!-- Centered Dynamic Typing Subtitle -->
+  <p align="center">
+    <a href="https://github.com/mehdiali-mk">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=0891B2&center=true&vCenter=true&width=700&lines=Full-Stack+Web+Developer+(MERN+Stack);JavaScript+%7C+React.js+%7C+Node.js+%7C+Express.js;Problem+Solver+in+C%2C+C%2B%2B+%26+Python;Open+Source+Enthusiast+%26+Consistent+Learner" alt="Typing SVG" />
+    </a>
+  </p>
 
   <!-- Top Badges -->
   <p align="center">
