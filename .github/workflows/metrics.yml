@@ -1,0 +1,69 @@
+name: GitHub Metrics Infographics
+
+on:
+  # Automatically updates every day at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allows you to trigger it manually from the Actions tab right away
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Left Column Card: Header, 3D Isometric Calendar, Languages & Lines of Code
+      - name: Generate Overview Metrics (Left Column)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.overview.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: mehdiali-mk
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          config_color_scheme: dark
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used, recently-used
+          plugin_lines: yes
+
+      # Right Column Card: Achievements, Coding Habits, PR/Issue Follow-up, Topics & Stack Overflow
+      - name: Generate Detailed Metrics (Right Column)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.detailed.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: mehdiali-mk
+          template: classic
+          base: ""
+          config_timezone: Asia/Kolkata
+          config_color_scheme: dark
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_habits: yes
+          plugin_habits_from: 100
+          plugin_habits_charts: yes
+          plugin_habits_facts: yes
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_sort: stars
+          plugin_topics_limit: 12
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 22252074
+          plugin_stackoverflow_sections: answers-top, questions-top
+          plugin_stackoverflow_limit: 2
