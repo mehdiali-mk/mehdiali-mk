@@ -19,7 +19,7 @@
       <img src="https://img.shields.io/github/followers/mehdiali-mk?logo=github&style=for-the-badge&color=1C1917&labelColor=1C1917" alt="GitHub Followers" />
     </a>
     <a href="https://www.x.com/mehdiali_mk" target="_blank" rel="noreferrer">
-      <img src="https://img.shields.io/twitter/follow/mehdiali_mk?logo=x&style=for-the-badge&color=0891b2&labelColor=1c1917" alt="X Followers" />
+      <img src="https://img.shields.io/twitter/follow/mehdiali_mk?logo=x&style=for-the-badge&color=1C1917&labelColor=1C1917" alt="X Followers" />
     </a>
     <a href="https://www.linkedin.com/in/mehdiali-mk/" target="_blank" rel="noreferrer">
       <img src="https://img.shields.io/badge/LinkedIn-Connect-0891b2?style=for-the-badge&logo=linkedin&labelColor=1c1917" alt="LinkedIn" />
